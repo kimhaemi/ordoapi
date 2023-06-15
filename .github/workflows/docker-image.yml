@@ -25,4 +25,4 @@ jobs:
           password: 20121101
           port: 22
           script: |
-            docker images > abababa.log
+            docker images > /home/ordo/abababa.log
