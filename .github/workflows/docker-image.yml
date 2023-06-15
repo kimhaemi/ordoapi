@@ -22,8 +22,8 @@ jobs:
            docker push imeahmik@gmail.com/ordoapi:${GITHUB_SHA::7}
            
     - name: Deploy
-    - uses: actions/checkout@v3
-    - with:
+      uses: actions/checkout@v3
+      with:
           host: http://222.108.21.14
           username: ordo
           key: ${{ secrets.PRIVATE_KEY }}
