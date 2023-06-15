@@ -20,8 +20,8 @@ jobs:
     - name: Deploy
       uses: actions/checkout@v3
       with:
-          host: http://222.108.21.14
-          username: root
+          host: 222.108.21.14
+          username: ordo
           ssh-key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCLY43VSUAeYFJeKquCAwyDe1QK/vqmMtjJyj2cBIr/7Cn9aYDiN/+Hi0AfoJoY53k3m893Z8RmgWRZ5tsJov9gacLH/F6gqcWnKprlwrzRnP8wR16oCcWe6/eaKM/O2nnQMQwTI8+FeJu8KK82QhyBro1GDMOVdBPHn9NZP0fekfZBV3Jtx2ky2Eu8YyDW80sdsAdxb5TXsphaER+iFPHuCpSy7ZMe0RkxJ0EI+8dJBxf5CXqeVjHuXHGVw7C9WaNIev13+OrSDo47WNlWC+VxZFElkg3LyhAcTn1hTbVpZJDslhxtnyXhQCCuOaCVXSW5ogEythvg95U6q5cTlUloiinldMgzWxca4VbkhVqmn+/uCHrkU2gZ+sSPd1aMf77PF2b3keX3yNd7TFQ8sRRk9JVOpruNCNLmRjWugbPGjicqDx2xsfIaB998OHzfgAl+Q255c4fnmvuLBpAl+8pIEb7j1z0aMSdzM6KL3y0TSgH3zt9ebv8t77dacgoqK5U= root@DESKTOP-S12Q4DN
           envs: GITHUB_SHA
           script: 
