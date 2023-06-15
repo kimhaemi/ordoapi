@@ -1,0 +1,38 @@
+server:
+  port:  ${service.port:8090}
+  servlet:
+    encoding:
+      force-response: true
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/test
+    url: jdbc:mysql://222.108.21.14:13307/bdlee
+    username: root
+    password: 20121101
+    hikari:
+      connectionTimeout: 30000
+      maximumPoolSize: 10
+      maxLifetime: 1800000
+      poolName: HikariCP
+      readOnly: false
+      connectionTestQuery: SELECT 1
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+jwt:
+  token:
+    secret: ordo20121101!
+#    header: "Authorization"
+#    prefix: "Bearer "
+#    expiration: 30m #30 min
+#    issuer: "sso"
+#    refresh-token-expiration: 24h #24 hours
+#    jks-alias: ldcc
+#    store-pass: ldcc!2626
+#    key-pass: ldcc!2626
