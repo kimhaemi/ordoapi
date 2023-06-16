@@ -13,16 +13,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      - name: Build the Docker image
+      - uses: actions/checkout@v3
+      - run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
-    - name: Deploy
-    - uses: appleboy/ssh-action@v0.1.6
-    - with: 
-       host: 222.108.21.14
-       username: ordo
-       password: 20121101
-       port: 22
-       script: |
-            docker images > /home/ordo/abababa.log
+      - name: Deploy
+        uses: appleboy/ssh-action@v0.1.6
+        with: 
+         host: 222.108.21.14
+         username: ordo
+         password: 20121101
+         port: 22
+         script: |
+              docker images > /home/ordo/abababa.log
