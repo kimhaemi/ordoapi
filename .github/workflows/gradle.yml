@@ -42,7 +42,7 @@ jobs:
       - name: Download artifact
         uses: actions/setup-java@v3
         with:
-          name: cicdsample
+          name: ordoapi
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.5.4
         with:
